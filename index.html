@@ -58,7 +58,8 @@
 					</section> -->
 
 					<section class="text-center">
-						<img style="vertical-align:middle; max-width: 20%; margin:2%;" src="img/bm.jpg" alt="">
+						<h1 class="center">@una <img class="fragment" style="display: inline; width: 2em; margin: -.25em 0 0 -.5em; z-index: -1; position: relative; vertical-align: middle;" src="img/unicornemoji.jpg" alt=""></h1>
+						<img class="fragment" style="vertical-align:middle; max-width: 20%; margin:2%;" src="img/bm.jpg" alt="">
 					  <img class="fragment" style="vertical-align:middle; max-width: 22%; margin:-10px 2% 0;" src="img/sassydc-logo.svg" alt="">
 					  <img class="fragment" style="vertical-align:middle; max-width: 22%; margin:2%" src="img/atxsass-logo.png" alt="">
 					  <img class="fragment" style="vertical-align:middle; max-width: 18%; margin:2%" src="img/designopen.png" alt="">
@@ -339,6 +340,7 @@
 
 						<aside class="notes">
 							<li>.jpg – Lossy Format, great for photographs, images with a lot of color</li>
+							<li>png = Free/Open Source reaction to gif threatening to lisence --> excels when the image has large, uniformly colored areas. Even for photographs
 							<li>PNG-8 refers to palette variant, which supports only 256 colors. Lossless Compression type. bc of limited color range -- may be artifacts </li>
 							<li>PNG-24 refers to true color variant, which supports more colors, but might be bigger. no artifacts</li>
 							<li>.gif – Lossless with limited color range like .png 8, but .png is usually the better choice.</li>
@@ -504,7 +506,8 @@
 						<h1 style="font-size:10em;">Jank!</h1>
 						<h1 class="fragment" style="color: #4c2f52">60 FPS</h1>
 						<aside class="notes">
-							<li>This is a real term. Jank is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the refresh rate (which is 60 times per second, 60FPS). Think: slow, crappy, or janky parallax experience.</li>
+							<li>This is a real term. Jank is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the screen refresh rate (which is 60 times per second, 60FPS). Think: slow, crappy, or janky parallax experience.</li>
+							<li>dan touched on this yesterday</li>
 							<li>frame rate on mobile will ALWAYS be different than on desktop -- so test on mobile</li>
 							</aside>
 					</section>
@@ -519,6 +522,7 @@
 
 					<section class="center">
 					<img src="img/event-record.gif" height="314" width="368">
+					<h3 class="fragment center"><a href="https://umaar.com/dev-tips/">Dev Tips Daily</a></h3>
 					</section>
 
 					<section>
@@ -528,7 +532,7 @@
 
 					<section>
 						<h1>Layout Thrashing</h1>
-						<h2>Avoid the dreaded document reflow!</h2>
+						<h2>Avoid document reflow!</h2>
 						<aside class="notes">
 						<li>Layout is where the browser figures out the geometric information for elements: their size and location in the page</li>
 							<li><b>Layout Thrashing</b> occurs when JavaScript violently writes, then reads, from the DOM, multiple times causing document reflows.</li>
@@ -540,15 +544,24 @@
 
 					<section>
 						<iframe style="width: 100%; height: 500px;" src="http://csstriggers.com" frameborder="0"></iframe>
+						<li><a href="http://csstriggers.com">CSS Triggers</a></li>
 					</section>
 
 					<section>
 						<img src="img/cheap-operations.jpg" class="center" alt="">
-						<aside class="notes">http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/</aside>
+						<li><a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">High Performance Animations</a></li>
+						<aside class="notes">
+						<li>dan used this image yesterday</li>
+						<li>from a popular article: "High Performance Animations"</li>
+						<li>transform all the things</li>
+						<li>null transform hack</li>
+						<li>triggers gpu acceleration instead of cpu -- dont use it too much</li>
+						</aside>
 					</section>
 
 					<section class="center">
 						<h1>Flexbox > Older Layout Models</h1>
+						<aside class="notes">Paul Lewis (who co-wrote the prev. article w/Paul Irish) also wrote about Flexbox lately</aside>
 					</section>
 
 					<section>
@@ -579,6 +592,19 @@
 						</ul></aside>
 					</section>
 
+					<section>
+						<h1>ITCSS</h1>
+						<img style="width:48%; margin-right: 2%;" src="img/itcss1.png"  alt="" class="left fragment">
+						<img style="width:48%;" src="img/itcss2.png"  alt="" class="right fragment">
+						<li class="fragment"><a href="http://csswizardry.com/2014/10/the-specificity-graph/">Harry Roberts</a></li>
+						<aside class="notes"><ul>
+							<li>inverted triangle css</li>
+							<li>specificity graph trend upward</li>
+							<li>writing better quality CSS</li>
+							<li>writing less CSS == smaller file size</li>
+						</ul></aside>
+					</section>
+
 				</section>
 
 				<section>
@@ -595,7 +621,9 @@
 						<h1>Let's Take a Look at Our Delivery</h1>
 					</section>
 
-					<section><img src="img/network.gif" alt=""></section>
+					<section class="center"><img src="img/networkpanel.gif" alt="">
+					<aside class="notes">network tab</aside>
+					</section>
 
 					<section>
 						<img src="img/separation-concerns.png" alt="">
@@ -608,15 +636,6 @@
 							<li>Leftovers:<br>
 							Analytics, advertising, third-party content</li>
 							<li></li>
-						</aside>
-					</section>
-
-					<section class="center">
-						<img src="img/sande-1.png" alt="">
-						<img class="fragment" src="img/sande-2.png" alt="">
-						<aside class="notes">
-							<li>its so important to understand these distinctions</li>
-							<li>avoid using bloated frameworks where we can and built elements from the core up</li>
 						</aside>
 					</section>
 
@@ -784,6 +803,20 @@ gulp.task('scripts', function() {
 								<li>Remember your separation of concerns, and remember to separate HTML as markup, CSS as presentational, and JS as functional</li>
 								<li>try not to make JS presentational if you can</li>
 							</aside>
+					</section>
+
+					<section>
+					<h1>LoadCSS</h1>
+						<pre><code>< head>
+  <script>
+    loadCSS( "path/to/mystylesheet.css" );
+  </script>
+  <noscript>
+    <link href="path/to/mystylesheet.css" rel="stylesheet">
+  </noscript>
+< /head>
+</code></pre>
+<aside class="notes"><ul><li>like scripts, you can also load CSS asynchronously</li><li>remember fallbacks if your browser doesnt support js</li></ul></aside>
 					</section>
 
 					<section class="center">
@@ -988,14 +1021,54 @@ gulp.task('default', ['mobile']);
 							<li><a href="https://github.com/addyosmani/psi-gulp-sample">Gulp PageSpeed Insights</a></li>
 						</ul>
 					</section>
+					<section>
+						<h2>Results</h2>
+						<pre><code>URL:       https://www.google.com/?gws_rd=ssl
+Score:     92
+Strategy:  desktop
+
+Number Resources                           | 13
+Number Hosts                               | 5
+Total Request                              | 2.62 kB
+Number Static Resources                    | 9
+Html Response                              | 116.9 kB
+Image Response                             | 46.02 kB
+Javascript Response                        | 879.68 kB
+Other Response                             | 1.76 kB
+Number Js Resources                        | 5
+                                           |
+Avoid Landing Page Redirects               | 7
+Enable Gzip Compression                    | 0
+Leverage Browser Caching                   | 0
+Main Resource Server Response Time         | 0
+Minify Css                                 | 0
+Minify HTML                                | 0
+Minify Java Script                         | 0.27
+Minimize Render Blocking Resources         | 0
+Optimize Images                            | 0
+Prioritize Visible Content                 | 0
+						</code></pre>
+					</section>
 
 					<section>
 						<img src="img/ngrok-infographic.png" alt="">
 						<ul><li><a href="http://una.github.io/gulp-local-psi/">Local Testing with Gulp PSI</a></li></ul>
 					</section>
 
+					<section class="center">
+						<h1>Performance Budget</h1>
+					</section>
+
+					<section style="width: 140%; margin-left: -20%" data-background="#3b4b54">
+						<img src="img/homepage-performance-dec2014.png" alt="">
+						<aside class="notes">							<li><a href="http://timkadlec.com/2014/01/fast-enough/">How Fast is Fast Enough?</a> You want to be 20% faster to be percieved as faster. </li><li>
+							say a competitors site loads in 5 seconds. 20% of 5 seconds is 1 second. So to be perceived as faster than them, you need to have your pages taking no longer than 4 seconds</li>
+							<li>If your site is faster, it will convert users</li></aside>
+					</section>
+
+
 					<section>
-						<h2>The Performance Budget</h2>
+						<h2>Setting a Performance Budget</h2>
 						<img src="img/1415552234perfbudget-task-failed.png" alt=""><br>
 						<ul>
 							<li><a href="http://danielmall.com/articles/how-to-make-a-performance-budget/">How to Make a Performance Budget</a></li>
@@ -1006,13 +1079,6 @@ gulp.task('default', ['mobile']);
 							<li>How long are you willing to make your user wait?</li>
 							<li>Use competitive analysis to see where you are in relation to your competition</li>
 						</aside>
-					</section>
-
-					<section style="width: 140%; margin-left: -20%" data-background="#3b4b54">
-						<img src="img/homepage-performance-dec2014.png" alt="">
-						<aside class="notes">							<li><a href="http://timkadlec.com/2014/01/fast-enough/">How Fast is Fast Enough?</a> You want to be 20% faster to be percieved as faster. </li><li>
-							say a competitors site loads in 5 seconds. 20% of 5 seconds is 1 second. So to be perceived as faster than them, you need to have your pages taking no longer than 4 seconds</li>
-							<li>If your site is faster, it will convert users</li></aside>
 					</section>
 				</section>
 
@@ -1025,13 +1091,13 @@ gulp.task('default', ['mobile']);
 					<section>
 					<h2 style="font-weight: 600">We're All in This Together</h2>
 						<img class="center" src="img/wallpaper-di-high-school-musical-3-con-il-cast-al-completo-82753.jpg" alt="">
-						<aside class="notes">You can't do this alone</aside>
+						<aside class="notes">This isn't all on you. It takes a whole team -- You can't do this alone</aside>
 					</section>
 
 					<section data-background="img/gulp-env.png">
 						<h1 class="fragment" style="font-size:2.3em; background: black; color: white; padding: .5em; text-align: center;">github.com/una/gulp-starter-env</h1>
 						<aside class="notes">
-							used this to unify my design team
+							- you can automate a lot of this. --- It includes __ ---- I made a gulp environment to unify my team as a starter that was picked up by all of the other teams on Watson
 						</aside>
 					</section>
 
@@ -1078,14 +1144,28 @@ gulp.task('default', ['mobile']);
 						</ul>
 					</section>
 
+					<section>
+						<div style="height: 100vh;">
+							<img style="position: absolute; top:0; left:0" src="img/mobile-test.jpg" alt="">
+							<img style="position: absolute; top:0; left:0" class="fragment" src="img/mobile-test2.jpg" alt="">
+						</div>
+
+						<aside class="notes"><ul>
+						<li>you can do mobile testing right in your browser</li>
+							<li>that little mobile icon lets you test things</li>
+							<li>can even throttle connection speed</li>
+						</ul></aside>
+					</section>
+
 					<section data-background="img/pasted_image_at_2015_01_16_16_46.png">
-					<aside class="notes">
-						just because we have all of these great testing tools doesn't mean that they replace the real thing. Whenever you can, test with real devices. After all, experiencing the cake in context is better than someone else telling you how it tastes.
-					</aside>
+						<aside class="notes">
+							<li>just because we have all of these great testing tools doesn't mean that they replace the real thing. Whenever you can, test with real devices. After all, experiencing the cake in context is better than someone else telling you how it tastes.</li>
+							<li>I shot myself in the foot w/this -- didn't realize i wasn't serving a web font</li>
+						</aside>
 					</section>
 
 					<section class="center">
-						<a href="http://thenetawards.com/vote/young-designer/"><img style="max-width: 600px; display: block; margin: 0 auto;" src="img/net_awards-logo15.svg" alt=""></a>
+						<a href="http://thenetawards.com/vote/young-designer/"><img style="max-width: 500px; display: block; margin: 0 auto;" src="img/net_awards-logo15.svg" alt=""></a>
 					</section>
 
 					<section data-background="#e5e2e2">
