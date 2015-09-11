@@ -58,20 +58,6 @@
 					</div>
 				</section>
 
-		<!-- 			<section class="center" style="font-size:1.2em">
-						<h2><a href="http://una.github.io/nom-nom-perf">una.im/slides-nom-nom-perf</a></h2>
-						<h2>@una</h2>
-					</section> -->
-
-					<section class="text-center">
-						<h1 class="center">@una <img class="fragment" style="display: inline; width: 2em; margin: -.25em 0 0 -.5em; z-index: -1; position: relative; vertical-align: middle;" src="img/unicornemoji.jpg" alt=""></h1>
-						<img class="fragment" style="vertical-align:middle; max-width: 20%; margin:2%;" src="img/bm.jpg" alt="">
-					  <img class="fragment" style="vertical-align:middle; max-width: 22%; margin:-10px 2% 0;" src="img/sassydc-logo.svg" alt="">
-					  <img class="fragment" style="vertical-align:middle; max-width: 22%; margin:2%" src="img/atxsass-logo.png" alt="">
-					  <img class="fragment" style="vertical-align:middle; max-width: 18%; margin:2%" src="img/designopen.png" alt="">
-					</section>
-				</section>
-
 				<section data-background="img/dough.png">
 					<h1>Make something people love</h1>
 					<div class="fragment" style="width: 23em; height: 5px; display: block; background: #fdd600; position: absolute; margin: -2.7em 0 0 -.65em;"></div>
@@ -107,6 +93,8 @@
 
 						<aside class="notes">
 							<li>Performance is a mark of user success with our products, as dictionary.com just told us</li>
+							<li>As lead developers, its also your job to make sure everyone is on the same page with this</li>
+							<li>I'm going to be talking about performance accross an entire team</li>
 						</aside>
 					</section>
 
@@ -126,7 +114,6 @@
 
 					<section class="center">
 						<h1>Performance-First Design</h1>
-						<aside class="notes">Say it with me: Performance First Design</aside>
 					</section>
 
 					<section>
@@ -155,22 +142,6 @@
 
 					<section data-background="#5E5B5A" class="center">
 						<img style="  width: 700px; margin-top: -1em;" src="img/burning-money.gif">
-					</section>
-
-					<section data-state="smiley-rolls">
-						<h1>
-							25% of users abandon a page if it takes more than 4 seconds to load.
-						</h1>
-						<aside class="notes">
-
-						<script>
-						Reveal.addEventListener( 'smiley-rolls', function() {
-						    var elem = document.querySelector('img:nth-child(4)');
-						    elem.classList.add("rollaway");
-						}, false );
-						</script>
-
-						</aside>
 					</section>
 
 					<section data-background="#4C2F52">
@@ -206,24 +177,24 @@
 
 					<section data-background="img/doorway.jpg">
 						<aside class="notes">
-							Doorway Effect explains why we can go searching for something in one room, walk into another room to look for it, and forget what we were looking for in the first place. This is due to our sensory memory, which works surprisingly similarly to a computer's memory bank.
+							Doorway Effect explains why we can go searching for something in one room, walk into another room to look for it, and forget what we were looking for in the first place.
 						</aside>
 					</section>
 
 					<section class="center">
 						<h1>Sensory Memory</h1>
 						<aside class="notes">
-							<li>Sensory memory = all of your senses</li>
-							<li>We don't control it</li>
-							<li>Very limited time spans</li>
-							<li>Allows for fluid continuation of a task</li>
+						<li>This is due to our sensory memory, which works surprisingly similarly to a computer's memory bank.</li>
+						<li>Sensory memory = all of your senses</li>
+						<li>We don't control it -- lasts for Very limited time spans</li>
+						<li>Allows for fluid continuation of a task</li>
 					</aside>
 					</section>
 
 					<section>
 						<img src="img/learning-types0.svg" alt="">
 						<aside class='notes'>
-							<li>example of iconic memory as a representation</li>
+							<li>iconic memory can help us visualize that time bank</li>
 							<li>on the internet, each new tab is like stepping into a new room</li>
 							<li>very easy for user to get distracted, move on to another task, and forget what they were trying to do or find in your app in the first place</li>
 							<li>perf becomes critical for keeping users on track</li>
@@ -263,6 +234,11 @@
 					<li>Look at what they're made up of</li>
 					<li>jQuery minified is 86kb, avg. image online is 654kb</li>
 					<li>Remove 1/5 of one image and you can have all the jQuery you want</li></aside></section>
+
+					<section class="center">
+						<img src="img/dBhlzlN.jpg" alt="">
+						<aside class="notes">In about 5 months average web page size will be same as Doom install image.</aside>
+					</section>
 
 					<section style="text-align: center" data-background="#4C2F52">
 						<h1>Do I really need that?</h1>
@@ -334,7 +310,7 @@
 							"Never put an image on the web that you haven't optimized"
 							<footer>- Dave Rupert</footer>
 						</blockquote>
-						<aside class="notes">tell this to your clients</aside>
+						<aside class="notes">this should be a rule -- put it in your team charters</aside>
 					</section>
 
 					<section>
@@ -357,13 +333,11 @@
 							</li>
 						</ul>
 						<aside class="notes">
-							<li>shoutout to dan</li>
-							<li>ImageAlpha is a way of reducing colors in a png-24 to turn it into a lossy png with your consent. You manage a toolbar and make decisions</li>
-							<li>TinyPNG: integrate into build tools</li>
-							<li>ImageOptim goes through lossless compression algorithms to get the smallest size</li>
+							<li>ImageAlpha is a way of reducing colors in a png-24 - you manage a toolbar and make decisions</li>
+							<li>TinyPNG: a tool you can integrate into build tools</li>
+							<li>ImageOptim uses several lossless compression algorithms to get the smallest size</li>
 							<li>compressor.io <-- web version</li>
 							<li>SVGO, also build tools and web version</li>
-							<li>http://addyosmani.com/blog/image-optimization-tools/</li>
 						</aside>
 					</section>
 
@@ -382,7 +356,7 @@
 						<h1>Compressive Images</h1>
 						<img src="img/compressive.png" alt="">
 
-						<aside class="notes">By saving a JPG image at double size but at 0% quality and allowing the browser to scale it to fit a smaller placeholder, you can reduce the image weight whilst increasing the bit depth; great for using one image for retina and non-retina displays. </aside>
+						<aside class="notes">By saving a JPG image at double size but at 0% quality and allowing the browser to scale it to fit a smaller placeholder, you can reduce the image weight whilst increasing the bit depth</aside>
 					</section>
 
 					<section class="center">
@@ -415,15 +389,11 @@
 						<img src="img/progressivepjpeg.jpg" class="center" height="474" width="793" alt="">
 						<aside class="notes">
 						<li>There are two primary types of JPEG images, baseline and progressive</li>
-						<li>Webpage Test Warns You of this</li>
 						<li>A simple or "baseline" JPEG file is stored as one top-to-bottom scan of the
 						image.  Progressive JPEG divides the file into a series of scans.</li>
+						<li>How the web used to be, but its no longer a default</li>
 						<li>huge percieved performance win</li>
 						</aside>
-					</section>
-
-					<section data-background="#4c2f52">
-						<h1 class="center">It's About How Fast the Page Feels</h1>
 					</section>
 
 					<section>
@@ -431,8 +401,12 @@
 						<aside class="notes">
 							<li>they are a tiny bit bigger than baseline jpegs but thats because they load in layers and not top to bottom</li>
 							<li>in this example, the size difference was only 2kilobytes</li>
-							<li>Progressive JPEGs are better because they are faster. Appearing faster is being faster, and perceived speed is more important that actual speed. Even if we are being greedy about what we are trying to deliver, progressive JPEGs give us as much as possible as soon as possible. -- Ann Robson</li>
+							<li>Progressive JPEGs are better because they appear faster.</li>
 						</aside>
+					</section>
+
+					<section data-background="#4c2f52">
+						<h1 class="center">It's About How Fast the Page Feels</h1>
 					</section>
 
 					<section class="center" data-background="#FCF3E4">
@@ -454,7 +428,8 @@
 					<section class='center'>
 						<h1>Picturefill</h1>
 						<img src="img/picturefill.png" alt="">
-						<aside class="notes"><li>if you need to use retina images, consider picturefill</li><li>polyfill for the picture element and source set</li><li>serve images based on a variety of conditions like screen size, viewport size, and screen resolution</li></aside>
+						<li style="text-align: center; margin-top: 1em; list-style: none"><a href="http://scottjehl.github.io/picturefill/">Picturefill</a></li>
+						<aside class="notes"><li>if you need to use retina images, consider picturefill</li><li>polyfill for the picture element and source set</li><li>serve images based on a variety of conditions like screen size, viewport size, and screen resolution</li><li>Filament Group & Bocoup</li></aside>
 					</section>
 
 					<section data-background="img/sitecost.png">
@@ -477,12 +452,13 @@
 					</section>
 
 					<section class="center">
+					<h1 class="center">Timeline Panel</h1>
 					<img src="img/event-record.gif" height="314" width="368">
 					<h3 class="center"><a href="https://umaar.com/dev-tips/">Dev Tips Daily</a></h3>
 					</section>
 
 					<section class="center">
-					<img src="img/frames_mode.png">
+					<img src="img/timeline2.png">
 						<aside class="notes">
 								<li>you can see how your page is rendering when you open the timeline mode in Chrome dev tools and select Frames</li>
 								<li>Hit record, do something, stop it, inspect</li>
@@ -543,7 +519,7 @@
 
 					<section>
 					<div class="center">
-						<video src="img/cssstats.mov" controls></video>
+						<video autoplay loop src="img/cssstats.mov" controls></video>
 						<h3 style="text-align: center; margin-top: 1em"><a href="http://cssstats.com">cssstats.com<li style="text-align: center; margin-top: 1em; list-style: none"></a></h3>
 						</div>
 						<aside class="notes"><ul>
@@ -552,11 +528,11 @@
 						</ul></aside>
 					</section>
 
-					<section>
+					<section class="center">
 						<h1>ITCSS</h1>
-						<img style="width:48%; margin-right: 2%;" src="img/itcss1.png"  alt="" class="left fragment">
-						<img style="width:48%;" src="img/itcss2.png"  alt="" class="right fragment">
-						<li class="fragment" style="text-align: center; margin-top: 1em; list-style: none"><a href="http://csswizardry.com/2014/10/the-specificity-graph/">Harry Roberts</a></li>
+						<img style="width:48%; margin-right: 2%;" src="img/itcss1.png"  alt="" class="left">
+						<img style="width:48%;" src="img/itcss2.png"  alt="" class="right">
+						<li style="text-align: center; margin-top: 1em; list-style: none"><a href="http://csswizardry.com/2014/10/the-specificity-graph/">Harry Roberts</a></li>
 						<aside class="notes"><ul>
 							<li>inverted triangle css</li>
 							<li>specificity graph trend upward</li>
@@ -717,6 +693,15 @@ gulp.task('scripts', function() {
 					</div>
 					</section>
 
+					<section style="text-align: center">
+						<h1 style="font-size:3em">Optimize what people see immediately</h1>
+						<hr class="fragment">
+						<ul style="font-size:2em">
+							<li class="fragment">Scripts</li>
+							<li class="fragment">Styles</li>
+						</ul>
+					</section>
+
 					<section>
 					<blockquote>
 						<h2>critical rendering path:</h2>
@@ -731,15 +716,6 @@ gulp.task('scripts', function() {
 							<li>By optimizing the critical rendering path we can significantly improve the time to first render of our pages.</li>
 							<li>optimize the delivery of content, and defer the rest</li>
 						</aside>
-					</section>
-
-					<section style="text-align: center">
-						<h1 style="font-size:3em">Optimize what people see immediately</h1>
-						<hr class="fragment">
-						<ul style="font-size:2em">
-							<li class="fragment">Scripts</li>
-							<li class="fragment">Styles</li>
-						</ul>
 					</section>
 
 					<section>
@@ -997,13 +973,6 @@ Prioritize Visible Content                 | 0
 					<h2 style="font-weight: 600">We're All in This Together</h2>
 						<img class="center" src="img/wallpaper-di-high-school-musical-3-con-il-cast-al-completo-82753.jpg" alt="">
 						<aside class="notes">This isn't all on you. It takes a whole team -- You can't do this alone</aside>
-					</section>
-
-					<section data-background="img/gulp-env.png">
-						<h1 class="fragment" style="font-size:2.3em; background: black; color: white; padding: .5em; text-align: center;">github.com/una/gulp-starter-env</h1>
-						<aside class="notes">
-							- you can automate a lot of this. --- It includes __ ---- I made a gulp environment to unify my team as a starter that was picked up by all of the other teams on Watson
-						</aside>
 					</section>
 
 					<section data-background="#2d0e3d">
