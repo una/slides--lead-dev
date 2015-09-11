@@ -43,13 +43,19 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section class="intro-slide" data-background="img/wcake2.jpg">
-					<h1 class="intro-text">A Primer on Performance</span></h1>
-					<ul class="intro-data">
-						<li class="team-name">BD Conf Nashville 2015</li>
-						<li></li>
-						<li>Una Kravets | <span style="color: #fdd600">@una</span></li>
+				<section class="intro-slide" data-background="img/A-traditional-afternoon-t-008.jpg">
+					<div class="center">
+					<h1 style="font-size: 4.3em" class="intro-text">A Primer on Performance</span></h1>
+					<ul style="
+					text-align: center;
+			    background-color: rgba(255,255,255,.4);
+			    outline: 1px solid grey;
+			    padding: 1em;
+					" class="intro-data">
+						<li style="color: #31223c" >The Lead Developer 2015</li>
+						<li style="color: #31223c">Una Kravets | <span style="color: #31223c">@una</span></li>
 					</ul>
+					</div>
 				</section>
 
 		<!-- 			<section class="center" style="font-size:1.2em">
@@ -66,13 +72,6 @@
 					</section>
 				</section>
 
-
-				<section class="center">
-					<a href="http://thenetawards.com/vote/young-designer/"><img style="max-width: 400px; display: block; margin: 0 auto;" src="img/net_awards-logo15.svg" alt=""></a>
-				</section>
-
-				<!-- pancakes - - > cake cakes. Make something you love. We're going to talk about products, and something that relates to all of us.  -->
-
 				<section data-background="img/dough.png">
 					<h1>Make something people love</h1>
 					<div class="fragment" style="width: 23em; height: 5px; display: block; background: #fdd600; position: absolute; margin: -2.7em 0 0 -.65em;"></div>
@@ -81,6 +80,7 @@
 				</section>
 
 				<section class="center" data-background="img/cake-berry.jpg">
+					<img src="img/teacup.png" alt="" class="fragment">
 					<!-- <img src="img/wedding-cake.jpg" height="533" width="400" alt="Wedding Cake"> -->
 					<aside class="notes">
 					<li>Ths cake is our product</li>
@@ -125,28 +125,8 @@
 						</section>
 
 					<section class="center">
-						<h1>Let's Talk About Windows.</h1>
-						<aside class="notes">like, real ones. Look behind you</aside>
-					</section>
-
-					<section class="center" data-background="img/snoopy-inrain.gif">
-					<aside class="notes">does anybody remember the the little drizzle we had yesterday?</aside>
-					</section>
-
-					<section class="center">
 						<h1>Performance-First Design</h1>
 						<aside class="notes">Say it with me: Performance First Design</aside>
-					</section>
-
-					<section>
-						<blockquote>
-							Amazon's calculated that a page load slow-down of just one second could cost it <strong>$1.6 billion</strong> in sales each year.
-							<footer>- <a href="http://www.montparnas.com/articles/more-evidence-that-speed-is-key-to-user-experience/">A 2009 A/B Study</a></footer>
-						</blockquote>
-						<aside class="notes">
-							<li>numerous studies -- th evidence is staggering</li>
-							<li>Perf is key in product success</li>
-						</aside>
 					</section>
 
 					<section>
@@ -250,17 +230,6 @@
 						</aside>
 					</section>
 
-					<section class="center">
-						<img style="width:100%;" src="img/Jakob-Nielsen-response-time-infographic.jpg">
-						<aside class="notes">
-						<li>performance speed vs interaction with the product</li>
-						<li>0.1 second - system reacting instantaneously</li>
-						<li>1.0 second - the limit for the user's flow of thought to stay uninterrupted, noticeable delay</li>
-						<li>4 seconds - lose 25% of our users</li>
-						<li>10 seconds is p much the abslolute limit for keeping attention</li>
-						</aside>
-					</section>
-
 				</section>
 
 				<section>
@@ -287,27 +256,23 @@
 						<li>Content optimizations are the best thing you can do to optimize performance.</li></aside>
 						</section>
 
-						<section class="text-center">
-						<h1>Care About What Matters Most First</h1>
-						<aside class="notes">
-						<li>jQuery minified is 86kb, avg. image online is 654kb</li>
-						<li>Remove 1/5 of one image and you can have all the jQuery you want</li></aside>
-					</section>
-
 					<section class="center">
 					<img style="width:100%; margin-top:-2em" src="img/page-growth.gif">
-					<aside class="notes"><li>size of websites still increasing</li>
-					<li>Look at what they're made up of</li></aside></section>
+					<aside class="notes">
+					<li>size of websites still increasing</li>
+					<li>Look at what they're made up of</li>
+					<li>jQuery minified is 86kb, avg. image online is 654kb</li>
+					<li>Remove 1/5 of one image and you can have all the jQuery you want</li></aside></section>
 
-					<section data-background="#4C2F52">
+					<section style="text-align: center" data-background="#4C2F52">
 						<h1>Do I really need that?</h1>
 					</section>
 
-					<section data-background="#4C2F52">
+					<section style="text-align: center" data-background="#4C2F52">
 						<h1>What Is the Main Goal Here?</h1>
 					</section>
 
-					<section data-background="#4C2F52">
+					<section style="text-align: center" data-background="#4C2F52">
 						<h1>What Next?</h1>
 						<aside class="notes">What do you want your user to do next? -- prioritize your content</aside>
 					</section>
@@ -327,19 +292,7 @@
 					</section>
 
 					<section>
-						<h2>Image Types</h2>
-						<img src="img/RasterBlog2.png" class="half-left" alt="">
-						<img src="img/VectorBlog3.png" class="half-right" alt="">
-						<aside class="notes">
-							<li>Raster, or bitmap, images are made of pixels.</li>
-							<li>A pixel is a single point or the smallest single element in a display device. (can vary device to device)</li>
-							<li>Vector images are mathematical calculations from one point to another that form geometrical shapes</li>
-							<li>no loss of quality when scaled up</li>
-						</aside>
-					</section>
-
-					<section>
-						<h2>File Types</h2>
+						<h2 style="z-index:30; position: relative">Image File Types</h2>
 						<ul>
 							<li class="fragment"><p>jpg</p>
 									<img src="img/persona-example.jpg" alt="" class="file-type-image">
@@ -354,16 +307,16 @@
 									<img style="width:400px" src="img/dancing-banana.gif" alt="" class="file-type-image">
 							</li>
 							<li class="fragment"><p>svg</p>
-									<img src="img/SVG.svg" alt="" class="file-type-image">
+									<img style="width: 520px; padding: 2em;" src="img/SVG.svg" alt="" class="file-type-image">
 							</li>
 						</ul>
 
 						<aside class="notes">
-							<li>.jpg – Lossy Format, great for photographs, images with a lot of color</li>
-							<li>png = Free/Open Source reaction to gif threatening to lisence --> excels when the image has large, uniformly colored areas. Even for photographs
-							<li>PNG-8 refers to palette variant, which supports only 256 colors. Lossless Compression type. bc of limited color range -- may be artifacts </li>
-							<li>PNG-24 refers to true color variant, which supports more colors, but might be bigger. no artifacts</li>
-							<li>.gif – Lossless with limited color range like .png 8, but .png is usually the better choice.</li>
+							<li>jpg – raster, Lossy Format -- depends on the PPI of the device -- great for photographs, images with a lot of color</li>
+							<li>PNG = Excels when the img has large, uniformly colored areas. Could even be better for photos
+							<li>PNG-8 refers to palette variant, which supports only 256 colors. Bc of limited color range -- may be artifacts </li>
+							<li>PNG-24 refers to true color variant, which supports more colors, but might be bigger.</li>
+							<li>gif – Lossless with limited color range like .png 8, but .png is usually the better choice. (OS rxn to gif threatening to license)</li>
 							<li>svg - vector graphics, can be exported from illustrator or sketch</li>
 						</aside>
 					</section>
@@ -426,14 +379,6 @@
 					</section>
 
 					<section>
-						<h1 style="font-weight:800">Won't That Make My Beautiful Images Look Terrible And Pixelated!?</h1>
-					</section>
-
-					<section class="center" data-background="#2d0e3d">
-						<img src="img/no.gif" height="233" width="233" alt="">
-					</section>
-
-					<section>
 						<h1>Compressive Images</h1>
 						<img src="img/compressive.png" alt="">
 
@@ -466,7 +411,7 @@
 					</section>
 
 					<section>
-						<h1>Progressive Jpegs: A Blast from the Past</h1>
+						<h1>Progressive .JPEGs</h1>
 						<img src="img/progressivepjpeg.jpg" class="center" height="474" width="793" alt="">
 						<aside class="notes">
 						<li>There are two primary types of JPEG images, baseline and progressive</li>
@@ -527,9 +472,13 @@
 						<h1 class="fragment" style="color: #4c2f52">60 FPS</h1>
 						<aside class="notes">
 							<li>This is a real term. Jank is any stuttering, juddering or just plain halting that users see when a site or app isn't keeping up with the screen refresh rate (which is 60 times per second, 60FPS). Think: slow, crappy, or janky parallax experience.</li>
-							<li>dan touched on this yesterday</li>
 							<li>frame rate on mobile will ALWAYS be different than on desktop -- so test on mobile</li>
 							</aside>
+					</section>
+
+					<section class="center">
+					<img src="img/event-record.gif" height="314" width="368">
+					<h3 class="center"><a href="https://umaar.com/dev-tips/">Dev Tips Daily</a></h3>
 					</section>
 
 					<section class="center">
@@ -540,38 +489,26 @@
 						</aside>
 					</section>
 
-					<section class="center">
-					<img src="img/event-record.gif" height="314" width="368">
-					<h3 class="fragment center"><a href="https://umaar.com/dev-tips/">Dev Tips Daily</a></h3>
-					</section>
-
 					<section>
 						<img src="img/video-fps-meter.gif" height="497" width="921" alt="">
 						<aside class="notes">Rendering in the bottom console: <b>"Show FPS meter</b> and <b>"Show paint rectangles"</b></aside>
 					</section>
 
 					<section>
-						<h1>Layout Thrashing</h1>
-						<h2>Avoid document reflow!</h2>
-						<aside class="notes">
-						<li>Layout is where the browser figures out the geometric information for elements: their size and location in the page</li>
-							<li><b>Layout Thrashing</b> occurs when JavaScript violently writes, then reads, from the DOM, multiple times causing document reflows.</li>
-							<li>Kills performance</li>
-							<li>Really bad on mobile devices</li>
-						</aside>
-					</section>
-
-
-					<section>
 						<iframe style="width: 100%; height: 500px;" src="http://csstriggers.com" frameborder="0"></iframe>
-						<li><a href="http://csstriggers.com">CSS Triggers</a></li>
+						<li style="text-align: center; margin-top: 1em; list-style: none"><a href="http://csstriggers.com">csstriggers.com</a></li>
+						<aside class="notes">
+						<li>Avoid Layout Thrashing</li>
+						<li>the browser figures out the geometric information for elements: their size and location in the page -- we don't want to change those</li>
+						<li>Kills performance</li>
+						<li>Really bad on mobile devices</li>
+						</aside>
 					</section>
 
 					<section>
 						<img src="img/cheap-operations.jpg" class="center" alt="">
-						<li><a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">High Performance Animations</a></li>
+						<li style="text-align: center; margin-top: 1em; list-style: none"><a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">High Performance Animations</a></li>
 						<aside class="notes">
-						<li>dan used this image yesterday</li>
 						<li>from a popular article: "High Performance Animations"</li>
 						<li>transform all the things</li>
 						<li>null transform hack</li>
@@ -605,7 +542,10 @@
 					</section>
 
 					<section>
+					<div class="center">
 						<video src="img/cssstats.mov" controls></video>
+						<h3 style="text-align: center; margin-top: 1em"><a href="http://cssstats.com">cssstats.com<li style="text-align: center; margin-top: 1em; list-style: none"></a></h3>
+						</div>
 						<aside class="notes"><ul>
 							<li>css stats.com</li>
 							<li></li>
@@ -616,7 +556,7 @@
 						<h1>ITCSS</h1>
 						<img style="width:48%; margin-right: 2%;" src="img/itcss1.png"  alt="" class="left fragment">
 						<img style="width:48%;" src="img/itcss2.png"  alt="" class="right fragment">
-						<li class="fragment"><a href="http://csswizardry.com/2014/10/the-specificity-graph/">Harry Roberts</a></li>
+						<li class="fragment" style="text-align: center; margin-top: 1em; list-style: none"><a href="http://csswizardry.com/2014/10/the-specificity-graph/">Harry Roberts</a></li>
 						<aside class="notes"><ul>
 							<li>inverted triangle css</li>
 							<li>specificity graph trend upward</li>
@@ -639,7 +579,7 @@
 					</section>
 
 					<section>
-						<h1>Let's Take a Look at Our Delivery</h1>
+						<h1>The Delivery</h1>
 					</section>
 
 					<section class="center"><img src="img/networkpanel.gif" alt="">
@@ -793,7 +733,7 @@ gulp.task('scripts', function() {
 						</aside>
 					</section>
 
-					<section>
+					<section style="text-align: center">
 						<h1 style="font-size:3em">Optimize what people see immediately</h1>
 						<hr class="fragment">
 						<ul style="font-size:2em">
@@ -929,55 +869,12 @@ gulp.task('scripts', function() {
 						</aside>
 					</section>
 
-					<section>
-						<img src="img/pagespeedtest-load.jpg" height="818" width="979" alt="">
-						<aside class="notes">
-							<li>JS Load Event Fired:<strong>900ms - 2200ms</strong></li>
-						</aside>
-					</section>
-
 					<section class="center">
 						<video src="img/ibmdesign-video.mp4" autoplay controls></video>
 					</section>
 
 					<section>
-						<img src="img/pagespeedtest-req.jpg" height="818" width="979" alt="">
-						<aside class="notes">
-							<li>HTTP Requests:<strong>50 - 75</strong></li>
-						</aside>
-					</section>
-
-					<section>
-						<h1>A Look at the Numbers:</h1>
-						<ul style="width: 80%;">
-							<li>Time To First Byte: <strong>200ms - 350ms</strong></li>
-							<li>DOM Content Loaded: <strong>1000ms - 2000ms</strong></li>
-							<li>JS Load Event Fired: <strong>900ms - 2200ms</strong></li>
-							<li>Total Download Size: <strong>1MB - 2MB</strong></li>
-							<li>DNS Lookup: <strong>10ms - 20ms</strong></li>
-							<li>HTTP Requests: <strong>50 - 75</strong></li>
-						</ul>
-						<aside class="notes">
-							the numbers all together based on standards --North's recommendations
-						</aside>
-					</section>
-
-					<section>
 						<img src="img/pgspeednums.png" alt="">
-					</section>
-
-					<section>
-						<h1>More Numbers:</h1>
-						<ul>
-							<li>First Byte Time: <strong>85</strong></li>
-							<li>Use persistent connection: <strong>85</strong></li>
-							<li>Use gzip compression for transferring compressible responses: <strong>90</strong></li>
-							<li>Compress Images: <strong>90</strong></li>
-							<li>Use Progressive JPEGs: <strong>90</strong></li>
-							<li>Leverage browser caching of static assets: <strong>90</strong></li>
-							<li>Use a CDN for all static assets: <strong>85</strong></li>
-							<li><a href="http://pointnorth.io">Cited from Point North</a></li>
-						</ul>
 					</section>
 
 					<section data-background="#2d0e3d" class="center">
@@ -1087,21 +984,6 @@ Prioritize Visible Content                 | 0
 						<aside class="notes">							<li><a href="http://timkadlec.com/2014/01/fast-enough/">How Fast is Fast Enough?</a> You want to be 20% faster to be percieved as faster. </li><li>
 							say a competitors site loads in 5 seconds. 20% of 5 seconds is 1 second. So to be perceived as faster than them, you need to have your pages taking no longer than 4 seconds</li>
 							<li>If your site is faster, it will convert users</li></aside>
-					</section>
-
-
-					<section>
-						<h2>Setting a Performance Budget</h2>
-						<img src="img/1415552234perfbudget-task-failed.png" alt=""><br>
-						<ul>
-							<li><a href="http://danielmall.com/articles/how-to-make-a-performance-budget/">How to Make a Performance Budget</a></li>
-							<li><a href="https://www.npmjs.com/package/grunt-perfbudget">Grunt Perf Budget</a></li>
-						</ul>
-						<aside class="notes">
-							<li>What is your maximum expenditure?</li>
-							<li>How long are you willing to make your user wait?</li>
-							<li>Use competitive analysis to see where you are in relation to your competition</li>
-						</aside>
 					</section>
 				</section>
 
